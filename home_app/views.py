@@ -5,6 +5,5 @@ from django.shortcuts import render
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def index(request):
-    msg = 'My message'
-    return render(request, 'index.html', {'message' : msg})
+def post_list(request) :
+    return render(request, 'home_app/post_list.html')
